@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
 body{
     background-color: #202124;
+}
+center{
+    
+}
+embed{
+    width: 90%;
+    height: 90%;
 }
