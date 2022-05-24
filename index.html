@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- google font (cairo) --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!--- normalise --->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--- fontawesome --->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--- main style --->
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -32,11 +38,22 @@
         </nav>
     </header>
 
-    <main class="landing">
-        <div class="container">
+    <main class="landing bd">
+        <div class="iconQcdd">
+            <img src="img/وزارة الدخلية.png" alt="">
+            <div></div>
+            <img src="img/الدفاع المدني.png" alt="">
         </div>
-    <center style="height: 100vh;">
+        <a href="#contents" class="goToContents">
+            <p>Go To Contents</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>        
+    </main>
+    <section class="contents landing bd" id="contents">
+    </section>
+
+    <!-- <center style="height: 100vh;">
         <embed src="Data/QCDD 2022 english copy requirements.pdf" type="application/pdf" />
-    </center>
+    </center> -->
 </body>
 </html>
