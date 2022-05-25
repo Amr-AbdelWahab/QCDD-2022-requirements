@@ -3,10 +3,18 @@ html{
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+:root{
+    --header-offset: 70px;
+    --main-trans: all 0.5s ease;
+}
+
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
+    transition: var(--main-trans);
+
 }
 ul{
     list-style: none;
@@ -19,9 +27,6 @@ a{
     border: 1px solid rgb(238, 255, 0);
 }
 
-:root{
-    --header-offset: 70px;
-}
 
 
 
@@ -82,7 +87,7 @@ nav ul li {
     font-size: 1.2rem;
     font-weight: 600;
     border-bottom: 5px solid rgba(127, 255, 212, 0);
-    transition: all 0.5s ease;
+    transition: var(--main-trans);
 
 }
 nav ul li a{
@@ -100,11 +105,14 @@ nav ul li:hover{
 .landing{
     margin-top: var(--header-offset);
     height: calc(100vh - var(--header-offset));
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .iconQcdd {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,28 +121,63 @@ nav ul li:hover{
 .iconQcdd img{
     width: 200px;
 }
+
 .iconQcdd div{
     height: 200px;
     width: 7px;
     background-color: #c78e2c;
     margin: 0 30px;
 }
+
 .goToContents{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 100px;
     color: #c78e2c;
-    border: 1px solid #000;
+    margin-top: 100px;
+    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: var(--main-trans);
+    position: relative;
+}
+.goToContents p{
+    position: relative;
+    transition: var(--main-trans);
+}
+
+.goToContents p::before,.goToContents  p::after{
+    content: '';
+    width:0;
+    height: 2px;
+    background-color: #c78e2c;
+    position: absolute;
+    bottom: 0;
+    transition: var(--main-trans);
+}
+    
+
+.goToContents p::after{
+    right: 0;
+}
+.goToContents i{
+    position: absolute;
+    bottom: -20px;
+    transition: var(--main-trans);
+}
+
+.goToContents:hover p::before{
+    width: 50%;
+}
+.goToContents:hover p::after{
+    width: 50%;
+}
+.goToContents:hover :last-child{
+    bottom: -30px;
 }
 
 center{
 
 }
+
 embed{
     width: 90%;
     height: 90%;
