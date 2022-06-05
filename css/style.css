@@ -10,6 +10,7 @@ html{
 :root{
     --header-offset: 70px;
     --main-trans: all 0.5s ease;
+    --main-txt-color: #c78e2c;
 }
 
 *{
@@ -155,12 +156,12 @@ nav ul li:hover{
 .iconQcdd div{
     height: 200px;
     width: 7px;
-    background-color: #c78e2c;
+    background-color: var(--main-txt-color)
     margin: 0 30px;
 }
 
 .goToContents{
-    color: #c78e2c;
+    color: var(--main-txt-color)
     margin-top: 100px;
     /* border: 1px solid #000; */
     display: flex;
@@ -178,7 +179,7 @@ nav ul li:hover{
     content: '';
     width:0;
     height: 2px;
-    background-color: #c78e2c;
+    background-color: var(--main-txt-color)
     position: absolute;
     bottom: 0;
     transition: var(--main-trans);
@@ -204,8 +205,47 @@ nav ul li:hover{
     bottom: -30px;
 }
 
+/*---------- */
+/* contents */
+/*---------- */
+
+.contents{
+    padding-top: calc(50px +  var(--header-offset));
+    min-height: calc(100vh );
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgb(175, 173, 173);
+}
 
 
+.contents h2{
+    margin-bottom: 20px;
+}
+.contents h3{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+.contents .container .sec{
+    /* font-size: 1.5rem; */
+    padding-bottom: 20px;
+
+
+}
+.contents .container div div{
+    margin: 0px 10px;
+    padding-left: 10px;
+    /* color: red; */
+    border-left:  2px solid var(--main-txt-color);
+}
+.contents .container div div p{
+    /* margin: 10px 10px; */
+    padding: 10px 10px 0;
+    border-left:  1px solid var(--main-txt-color)
+}
 
 
 
