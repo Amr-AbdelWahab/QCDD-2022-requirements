@@ -161,7 +161,7 @@ nav ul li:hover{
 }
 
 .goToContents{
-    color: var(--main-txt-color)
+    color: var(--main-txt-color);
     margin-top: 100px;
     /* border: 1px solid #000; */
     display: flex;
@@ -170,16 +170,22 @@ nav ul li:hover{
     transition: var(--main-trans);
     position: relative;
 }
+
+
+
+
 .goToContents p{
     position: relative;
     transition: var(--main-trans);
 }
 
+
+
 .goToContents p::before,.goToContents  p::after{
     content: '';
     width:0;
     height: 2px;
-    background-color: var(--main-txt-color)
+    background-color: var(--main-txt-color);
     position: absolute;
     bottom: 0;
     transition: var(--main-trans);
@@ -195,6 +201,8 @@ nav ul li:hover{
     transition: var(--main-trans);
 }
 
+
+
 .goToContents:hover p::before{
     width: 50%;
 }
@@ -204,6 +212,9 @@ nav ul li:hover{
 .goToContents:hover :last-child{
     bottom: -30px;
 }
+
+
+
 
 /*---------- */
 /* contents */
@@ -231,6 +242,7 @@ nav ul li:hover{
 
 .contents h2{
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .contents h3{
     font-weight: 500;
@@ -260,6 +272,13 @@ nav ul li:hover{
     border-bottom: 1px solid rgba(175, 173, 173, 0.11);
     position: relative;
 }
+
+.contents .container .cont{
+    color: var(--main-txt-color);
+    transition: var(--main-trans);
+    position: relative;
+}
+
 p:hover .cont {
     padding-right: 3rem;
     padding-right: 15%;
@@ -271,8 +290,6 @@ p:hover .cont {
 .contents .container div div p  span{
     color: rgb(175, 173, 173);
 }
-
-
 
 
 
