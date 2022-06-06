@@ -11,6 +11,7 @@ html{
     --header-offset: 70px;
     --main-trans: all 0.5s ease;
     --main-txt-color: #c78e2c;
+    --sec-txt-color:rgb(175, 173, 173);
 }
 
 *{
@@ -140,7 +141,7 @@ nav ul li:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(175, 173, 173);
+    color: var(--sec-txt-color);
 }
 
 .iconQcdd {
@@ -156,7 +157,7 @@ nav ul li:hover{
 .iconQcdd div{
     height: 200px;
     width: 7px;
-    background-color: var(--main-txt-color)
+    background-color: var(--main-txt-color);
     margin: 0 30px;
 }
 
@@ -224,13 +225,13 @@ nav ul li:hover{
     padding-top: calc(50px +  var(--header-offset));
     min-height: calc(100vh );
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    color: rgb(175, 173, 173);
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: var(--sec-txt-color);
 }
 
-.contents .container{
+.contents .contant-table{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -284,17 +285,90 @@ p:hover .cont {
     padding-right: 15%;
 }
 p:hover .cont {
-    color: ;
     background-color: rgba(0, 0, 0, 0.623);
 }
 .contents .container div div p  span{
-    color: rgb(175, 173, 173);
+    color: var(--sec-txt-color);
 }
 
 
 
 
 
+
+
+/*---------- */
+/* output */
+/*---------- */
+
+.output-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-navigation a{
+    all: unset;
+    color: var(--sec-txt-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    border:  1px solid var(--main-txt-color);
+    position: relative;
+    transition: var(--main-trans);
+}
+.output-navigation span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.output-navigation span::before,
+.output-navigation span::after{
+    content: "";
+    background-color: var(--main-txt-color);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    opacity: .2;
+    transition: var(--main-trans);
+    z-index: -1;
+}
+.output-navigation span::before{
+    left: 0;
+}
+.output-navigation span::after{
+    right: 0;
+}
+.output-navigation a:hover span::after,
+.output-navigation a:hover span::before,
+.output-navigation a:hover {
+    color: white;
+    width: 50%;
+}
+
+
+.output iframe{
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    border: none;
+}
+.output h3{
+    font-weight: 500;
+    color: var(--main-txt-color);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding-top: calc(20px + var(--header-offset));
+    border-bottom:  1px solid var(--main-txt-color);
+
+}
 
 
 
