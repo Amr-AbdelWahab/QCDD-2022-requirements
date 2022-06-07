@@ -1,0 +1,93 @@
+:root{
+    --header-offset: 70px;
+    --main-trans: all 0.5s ease;
+    --main-txt-color: #c78e2c;
+    --sec-txt-color:rgb(175, 173, 173);
+
+    --main-color: #3a60f4;
+    --hover: #ff6633;
+}
+
+
+
+
+
+.soIcon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7em;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    transform: rotate(0deg);
+  
+    transition: 0.3s ease;
+  }
+  .soIcon:hover {
+    transform: rotate(1turn);
+    color: var(--hover);
+    /* box-shadow: 0 0 5px var(--hover) ; */
+  }
+  
+
+
+
+
+footer {
+    height: 100px;
+    background-color: #000016;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
+  }
+  footer p {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  footer span {
+    font-size: 1.2em;
+    color: var(--hover);
+  }
+
+  footer span {
+    display: inline-block;
+  }
+  .social-icons {
+    font-size: larger;
+  }
+  footer .social-icons {
+    /* width: 200px; */
+    font-size: smaller;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+
+
+  
+  .up {
+    color: var(--main-color);
+    font-size: 2em;
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: 0.7s ease;
+  }
+  .up:hover {
+    color: var(--hover);
+    bottom: 25px;
+  }
+  
+  .show {
+    right: 50px;
+    transform: rotate(0);
+  }
+  
