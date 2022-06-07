@@ -77,9 +77,9 @@ body{
     background-position: center;
 }
 nav{
-    background-color: #ffffffd7;
     background-color: #202124;
     background-color: #000016;
+    background-color: #ffffffd7;
 
     width: 100%;
     position: fixed;
