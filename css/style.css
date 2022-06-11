@@ -71,14 +71,16 @@ a{
 
 body{
     background-color: #202124;
-    background-image: url(../img/BG/B-G.jpg);
+    /* background-image: url(../img/BG/BG.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 nav{
+    background-color: #ffffffd7;
     background-color: #202124;
-    background-color: #ffffff;
+    background-color: #000016;
+
     width: 100%;
     position: fixed;
     top: 0;
@@ -98,12 +100,16 @@ nav img{
 }
 
 nav input{
+    /* all: unset; */
     width: 30%;
     height: 2rem;
-    /* border: 1px solid #000; */
-    border-radius: 5px;
+    border: 1px solid var(--main-txt-color);
+    border: 1px solid #0563aa4f;
+    border-radius: 10px;
     margin: 1rem 20px;
     padding: 0.5rem;
+    background-color: #20212400;
+    color:  #043a64;
 }
 
 nav ul{
@@ -240,6 +246,13 @@ nav ul li:hover{
     min-width: 600px;
     padding-bottom: var(--header-offset);
 }
+.contents .container .part3{
+    margin-top:  var(--header-offset);
+}
+
+.nth-child-1{
+    border-top:1px solid var(--main-txt-color);
+}
 
 .contents h2{
     margin-bottom: 20px;
@@ -258,38 +271,52 @@ nav ul li:hover{
     padding-bottom: 20px;
 }
 
-.contents .container div div{
-    margin: 0px 10px;
-    padding-left: 10px;
-    /* color: red; */
-    border-left:  2px solid var(--main-txt-color);
-}
 .contents .container div div p{
     /* margin: 10px 10px; */
-    padding: 10px 10px 0;
+    padding: 10px 10px 5px;
     border-left:  1px solid var(--main-txt-color);
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(175, 173, 173, 0.11);
+    align-items: center;
+    border-bottom: 1px solid rgba(175, 173, 173, 0.21);
     position: relative;
 }
+
+.nth-child-1,
+.contents .container div div p
+{
+    /* border-radius: 15px; */
+}
+
+.contents .container div div span::before{
+    content: "";
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+    transition: var(--main-trans);
+}
+.contents .container div div p:hover span::before {
+    opacity: 1;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.623);
+
+
+} 
+
 
 .contents .container .cont{
     color: var(--main-txt-color);
     transition: var(--main-trans);
     position: relative;
 }
-
-p:hover .cont {
-    padding-right: 3rem;
-    padding-right: 15%;
-}
-p:hover .cont {
-    background-color: rgba(0, 0, 0, 0.623);
-}
 .contents .container div div p  span{
     color: var(--sec-txt-color);
-}
+} 
 
 
 
