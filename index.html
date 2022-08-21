@@ -39,7 +39,7 @@
                 <input type="text" placeholder="Search">
         
                 <ul>
-                    <li><a href="#contents">Contents</a></li>
+                    <li><a href="#mainContent">Contents</a></li>
                     <li><a href="#footer">About</a></li>
                     <li><a href="#">Home</a></li>
                 </ul>
@@ -53,7 +53,7 @@
             <div></div>
             <img src="img/الدفاع المدني.png" alt="">
         </div>
-        <a href="#contents" class="goToContents">
+        <a href="#mainContent" class="goToContents">
             <p>Go To Contents</p>
             <i class="fa-solid fa-chevron-down"></i>
             <i class="fa-solid fa-chevron-down"></i>
@@ -66,7 +66,35 @@
     <!--- --------- --->
     <!--- contents Index ------------------------------------------>
     <!--- --------- --->
-    <section class="contents bd" id="contents">
+
+<!-- SECTION - 1 -->
+
+    <section class="contents mainIndex bd" id="mainContent">
+        <div class="container" >
+
+                    <!-- Special Links -->
+                    <div class="part part3">
+                        <h2>Main INDEX</h2>
+                        <div class="sec nth-child-1">
+                            <p><a href="#NFPA-101" class="cont"><span><i class="fa-solid fa-star"></i> </span> Life Safety Code Handbook - NFPA 101 (2018)</a><span>NFPA 101</span></p>
+                            <p><a href="#table7_3_1_2" class="cont" onclick="tableOlf()"><span><i class="fa-solid fa-star"></i></span>  Occupant Load Factor </a><span>NFPA 101 Table 7.3.1.2</span></p>
+                            <p><a href="#BP2015" class="cont"><span><i class="fa-solid fa-star"></i> </span> QCDD - (BP) Guidelines 2015  </a><span>Guidelines 2015</span></p>
+                            <p><a href="#FF-FA-MV2015" class="cont"><span><i class="fa-solid fa-star"></i> </span> QCDD - (FF) (FA) (MV) Guidelines 2015  </a><span>Guidelines 2015</span></p>
+                            <p><a href="#subContent" class="cont"><span><i class="fa-solid fa-star"></i> </span> QCDD 2022 REQUIREMENTS </a><span>Guidelines 2022</span></p>
+                        </div>
+                    </div>
+
+
+        </div><!-- //end - container -->
+    </section>
+    <!-- ----------------- -->
+    <!-- //end contents section ------------------------------------>
+    <!-- ----------------- -->
+
+
+<!-- SECTION - 2 -->
+
+    <section class="contents bd" id="subContent">
         <div class="container" >
 
             <!-- contant-table -->
@@ -153,16 +181,6 @@
                         <p><a href="#" class="cont"> References </a><span>429</span></p>
                     </div>
 
-                    <!-- Special Links -->
-                    <div class="part part3">
-                        <h2>special Links</h2>
-                        <div class="sec nth-child-1">
-                            <p><a href="#NFPA-101" class="cont"><span><i class="fa-solid fa-star"></i> </span> Life Safety Code Handbook - NFPA 101 (2018)</a><span>NFPA 101</span></p>
-                            <p><a href="#table7_3_1_2" class="cont"><span><i class="fa-solid fa-star"></i></span>  Occupant Load Factor </a><span>NFPA 101 Table 7.3.1.2</span></p>
-                            <p><a href="#BP2015" class="cont"><span><i class="fa-solid fa-star"></i> </span> QCDD - (BP) Guidelines 2015  </a><span>Guidelines 2015</span></p>
-                            <p><a href="#FF-FA-MV2015" class="cont"><span><i class="fa-solid fa-star"></i> </span> QCDD - (FF) (FA) (MV) Guidelines 2015  </a><span>Guidelines 2015</span></p>
-                        </div>
-                    </div>
                 </div>
 
 
@@ -170,31 +188,33 @@
 
 
         </div><!-- //end - container -->
-
-
     </section>
-    <!-- ----------------- -->
-    <!-- //end contents section ------------------------------------>
-    <!-- ----------------- -->
 
 
 
-
-
-
-
-
-    <!--
-output 
- -->
+    <!-- --------------------------
+                    OUTPUTS 
+    ----------------------------- -->
 
     <section class="output bd" id="">
         <div class="container">
-
             <div class="">
 
-                <!-- Life Safety Code Handbook - NFPA 101 (2018) -->
-                <div class="output-cont">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="output bd" id="">
+        <div class="container">
+            <div class="">
+
+<!-- Life Safety Code Handbook - NFPA 101 (2018) -->
+                <!-- <div class="output-cont">
                     <h3 id="NFPA-101">Life Safety Code Handbook - NFPA 101 (2018)</h3>
                     <div class="output-navigation">
                         <a href="Data/NFPA 101HB 2018.pdf" target="_blank"><span></span> Open File</a>
@@ -204,10 +224,10 @@ output
                     class=""
                     src="Data/NFPA 101HB 2018.pdf#toolbar=1" 
                     ></iframe>
-                </div>                
+                </div>                 -->
 
-                <!-- Occupant Load Factor -->
-                <div class="output-cont">
+<!-- Occupant Load Factor -->
+                <!-- <div class="output-cont">
                     <h3 id="table7_3_1_2">Table 7.3.1.2 - Occupant Load Factor</h3>
                     <div class="output-navigation">
                         <a href="Data/Table 7.3.1.2  - OLF - NFPA 101.pdf" target="_blank"><span></span>Open File</a>
@@ -218,10 +238,10 @@ output
                     class=""
                     src="Data/Table 7.3.1.2  - OLF - NFPA 101.pdf#toolbar=1" 
                     ></iframe>
-                </div>
+                </div> -->
 
-                <!-- QCDD - (BP) Guidelines 2015-->
-                <div class="output-cont">
+<!-- QCDD - (BP) Guidelines 2015-->
+                <!-- <div class="output-cont">
                     <h3 id="BP2015">QCDD - (BP) Guidelines 2015</h3>
                     <div class="output-navigation">
                         <a href="Data/QCD-(BP) F&LS Guidelines 2015.pdf" target="_blank"><span></span>Open File</a>
@@ -232,10 +252,10 @@ output
                     class=""
                     src="Data/QCD-(BP) F&LS Guidelines 2015.pdf#tolbar=1" 
                     ></iframe>
-                </div>
+                </div> -->
 
-                <!-- QCDD - (FF) (FA) (MV) Guidelines 2015 -->
-                <div class="output-cont">
+<!-- QCDD - (FF) (FA) (MV) Guidelines 2015 -->
+                <!-- <div class="output-cont">
                     <h3 id="FF-FA-MV2015">QCDD - (FF) (FA) (MV) Guidelines 2015</h3>
                     <div class="output-navigation">
                         <a href="Data/QCD-(FF)(FA)(MV)-G.Annex Rev2015.pdf" target="_blank"><span></span>Open File</a>
@@ -246,7 +266,7 @@ output
                     class=""
                     src="Data/QCD-(FF)(FA)(MV)-G.Annex Rev2015.pdf#toolbar=1" 
                     ></iframe>
-                </div>
+                </div> -->
 
 
 

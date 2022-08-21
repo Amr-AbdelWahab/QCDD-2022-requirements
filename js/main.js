@@ -15,3 +15,10 @@ goUp.onclick = function () {
         behavior : "smooth",
     });
 }
+
+
+
+
+function tableOlf() {
+    console.log('tableOlf');
+}
