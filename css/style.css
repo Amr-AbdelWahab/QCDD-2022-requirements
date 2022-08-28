@@ -324,6 +324,9 @@ nav ul li:hover{
     justify-content: center;
     align-items: center;
 }
+.mainIndex h2{
+    margin-bottom: 0;
+}
 
 
 
