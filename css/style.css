@@ -337,6 +337,10 @@ nav ul li:hover{
 /* output */
 /*---------- */
 
+#output{
+    min-height: 100vh;
+}
+
 .output-cont{
     display: flex;
     flex-direction: column;
