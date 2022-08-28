@@ -272,7 +272,7 @@ nav ul li:hover{
 }
 
 .contents .container div div p{
-    padding: 10px 10px 5px;
+    padding: 8px ;
     border-left:  1px solid var(--main-txt-color);
     display: flex;
     justify-content: space-between;
@@ -302,7 +302,7 @@ nav ul li:hover{
     opacity: 1;
     width: 100%;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.404);
 } 
 
 
@@ -310,9 +310,13 @@ nav ul li:hover{
     color: var(--main-txt-color);
     transition: var(--main-trans);
     position: relative;
+    padding: 2px ;
+    width: 100%;
 }
 .contents .container div div p  span{
     color: var(--sec-txt-color);
+    min-width: fit-content;
+    margin-left: 10px;
 } 
 
 
