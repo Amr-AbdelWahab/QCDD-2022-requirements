@@ -36,6 +36,9 @@ a{
     border: 1px solid rgb(238, 255, 0);
     col
 }
+.dis-none{
+    display: none !important;
+}
 
 
 .container {
@@ -427,7 +430,7 @@ nav ul li:hover{
     color: var(--sec-txt-color);
 }
 
-.contents .contant-table{
+.contents .content-table{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
