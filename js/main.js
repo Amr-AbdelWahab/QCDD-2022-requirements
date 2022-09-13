@@ -19,20 +19,10 @@ includes.map(include => {
 
 
 
-
-
-
-
-
-
-
-
-
-
 let goUp = document.getElementById("goUp");
 
 window.onscroll = function () {
-    console.log(this.scrollY);
+    // console.log(this.scrollY);
 
     this.scrollY >= 700 
     ? goUp.classList.add("show") 
@@ -46,9 +36,20 @@ goUp.onclick = function () {
     });
 }
 
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
 
 
 
-function tableOlf() {
-    console.log('tableOlf');
+let items = document.querySelectorAll('[data-ID');
+
+
+for (let i = 0; i < items.length; i++) {
+  console.log( items[i]);
 }
+
+
+
+
+

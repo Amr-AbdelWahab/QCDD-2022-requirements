@@ -80,12 +80,7 @@ body{
     background-position: center;
 }
 nav{
-    /* background-color: #202124;
-    background-color: #000016;
-    background-color: #ffffff6c; */
     background-color: white;
-    /* display: none; */
-
     width: 100%;
     position: fixed;
     position: static;
@@ -138,6 +133,9 @@ nav ul li a{
 nav ul li:hover{
     background-color: #0563aa4f;
     border-bottom-color: #9d1d08;
+}
+nav .ham{
+    display: none;
 }
 
 
