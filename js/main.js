@@ -40,14 +40,29 @@ goUp.onclick = function () {
 // -----------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------
 
-
-
 let items = document.querySelectorAll('[data-ID');
 
 
 for (let i = 0; i < items.length; i++) {
-  console.log( items[i]);
+    console.log( items[i]);
 }
+
+
+// -----------------------------------------------------------------------------------------
+// ------------------ Ham and Nav Links --------------------------------------
+// -----------------------------------------------------------------------------------------
+
+let hamIcon = document.getElementById('ham');
+let mobList = document.getElementById('mobList');
+
+hamIcon.addEventListener('click', toggleNavLinks);
+
+function toggleNavLinks () {
+    hamIcon.classList.toggle('active');
+    mobList.classList.toggle('block');
+
+}
+
 
 
 

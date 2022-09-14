@@ -38,19 +38,27 @@
     }
     nav ul{
         position: absolute;
-        display: none;
+        /* display: none; */
         padding: 0;
         margin: 0;
         right: 0;
         flex-direction: column;
         width: 100%;
-        background-color: var(--sec-txt-color);
+        height: 0px;
+        background-color:rgba(175, 173, 173, 0.219) ;
+        transition: var(--main-trans);
         top: 44.93px;
         z-index: 2;
+        overflow: hidden;
     }
     nav ul.block{
-        display: block;
+        height: 200px;
+
     }
+    nav ul.block li:hover{
+        border-bottom: none;
+    }
+    
     nav li {
         display: inline-block;
         width: 100%;
@@ -60,6 +68,7 @@
         text-align: center;
     }
     nav li a{
+        color: white !important;
         display: inline-block;
         line-height: 50px;
         padding: 0;
