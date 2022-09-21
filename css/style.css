@@ -283,19 +283,17 @@ nav .ham{
         opacity: 0;
         top: 3.5rem;
     }
-}
+} 
 
     
 
 @keyframes seb-intro{
     0%{
         height: 7px;
-        /* opacity: 0; */
         transform: rotate(0turn);
     }
     20%{
         height: 7px;
-        /* opacity: 0; */
         transform: rotate(0turn);
     }
     30%{
@@ -313,6 +311,8 @@ nav .ham{
         transform: rotate(0.5turn);
     }
 }
+
+
 @keyframes logoR-intro{
     0%{
         left: -50%;
