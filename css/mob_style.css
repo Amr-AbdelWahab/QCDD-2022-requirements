@@ -241,11 +241,11 @@
                 width: 550px;
             }
             30%{
-                width: 7px;
+                width: 0px;
         
             }
             100%{
-                width: 7px;
+                width: 0px;
             }
         
         
