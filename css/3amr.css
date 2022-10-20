@@ -1,0 +1,97 @@
+:root {
+
+
+    --trans: all 0.25s ease-in-out;
+}
+
+
+/*
+    * ----------------------
+    * -----global styles----------
+    * ----------------------
+*/
+
+
+
+*{
+    transition: var(--trans);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: var(--main-BG-clr);
+    color: var(--main-TXT-clr);
+    font-family: 'Tajawal', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 
+    *----------------------
+    ! ----- My Global Class ----------
+    * ----------------------
+*/
+
+.bd {
+    border: 1px solid #000;
+}
+.disNon {
+    display: none;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*
+    * ----------------------
+    * -----media----------
+    * ----------------------
+*/
+
+
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        /* width: 750px; */
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        width: 100%;
+        padding: 0 6rem;
+        /* margin: 0 8rem; */
+    }
+}

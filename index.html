@@ -14,6 +14,7 @@
     <!--- fontawesome --->
     <link rel="stylesheet" href="css/all.min.css">
     <!--- main style --->
+    <link rel="stylesheet" href="css/3amr.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- <link rel="stylesheet" href="css/test.css"> -->
@@ -142,26 +143,26 @@
 
                     <!--I ASSEMBLY OCCUPANCY -->
                     <div class="sec"><h3>i  ASSEMBLY OCCUPANCY</h3>
-                        <p><a href="#output" data-ID="1" onclick="makeOut()" class="cont"><span>1.0 </span> Masjid and Mosque Buildings </a><span>5</span></p>
+                        <p><a href="#output" data-ID="1.0" onclick="makeOut()" class="cont"><span>1.0 </span> Masjid and Mosque Buildings </a><span>5</span></p>
                     </div>
 
                     <!--II EDUCATIONAL OCCUPANCY -->
                     <div class="sec"><h3>ii EDUCATIONAL OCCUPANCY</h3>
-                        <p><a href="#output" data-ID="2" class="cont"><span>2.0 </span> Nurseries-Child Care Occupancies </a><span>19</span></p>
-                        <p><a href="#output" data-ID="3" class="cont"><span>3.0 </span> Educational Occupancies </a><span>37</span></p>
+                        <p><a href="#output" data-ID="2.0" class="cont"><span>2.0 </span> Nurseries-Child Care Occupancies </a><span>19</span></p>
+                        <p><a href="#output" data-ID="3.0" class="cont"><span>3.0 </span> Educational Occupancies </a><span>37</span></p>
                     </div>
 
                     <!--III HEALTH CARE OCCUPANCY -->
                     <div class="sec"><h3>iii  HEALTH CARE OCCUPANCY</h3>
-                        <p><a href="#output" class="cont"><span>4.0 </span> Health Care Occupancies </a><span>69</span></p>
+                        <p><a href="#output" data-ID="4.0" class="cont"><span>4.0 </span> Health Care Occupancies </a><span>69</span></p>
                     </div>
 
                     <!--IV RESIDENTIAL OCCUPANCY. -->
                     <div class="sec"><h3>iii  RESIDENTIAL OCCUPANCY</h3>
-                        <p><a href="#output" class="cont"><span>5.0 </span> HOTEL Buildings </a><span>93</span></p>
-                        <p><a href="#output" class="cont"><span>6.0 </span> DORMITORY Buildings </a><span>127</span></li>
-                        <p><a href="#output" class="cont"><span>7.0 </span> ACCOMMODATION Buildings </a><span>145</span></li>
-                        <p><a href="#output" class="cont"><span>8.0 </span> APARTMENT Buildings </a><span>165</span></li>
+                        <p><a href="#output" data-ID="5.0" class="cont"><span>5.0 </span> HOTEL Buildings </a><span>93</span></p>
+                        <p><a href="#output" data-ID="6.0" class="cont"><span>6.0 </span> DORMITORY Buildings </a><span>127</span></li>
+                        <p><a href="#output" data-ID="7.0" class="cont"><span>7.0 </span> ACCOMMODATION Buildings </a><span>145</span></li>
+                        <p><a href="#output" data-ID="8.0" class="cont"><span>8.0 </span> APARTMENT Buildings </a><span>165</span></li>
                     </div>
 
                     <!--V MERCANTILE OCCUPANCY.. -->
@@ -226,18 +227,36 @@
                     OUTPUTS 
     ----------------------------- -->
 
-    <section class="output bd" id="output">
+    <section class="output dis Non bd" id="output">
         <div class="container">
 <!-- QCDD 2022 REQUIREMENTS -->
-                <div 
+
+                <!-- include file from -->
+                <!-- html-Parts/01_output.html -->
+
+                <!-- <div 
                     class="output-cont"
                     id="putOutHere"
                     data-include="html-Parts/01_output">
+                </div> -->
 
-                    <!-- include file from -->
-                    <!-- html-Parts/01_output.html -->
-
+                <div class="output-cont" id="putOutHere">
+                  <h3>QCDD 2022 REQUIREMENTS</h3>
+                  <h4>MASJID AND MOSQUE OCCUPANCIES</h4>
+                  <div class="output-navigation">
+                      <a href="Data/SPLIT-QCD-22/1.0.pdf" target="_blank"><span></span>Open File</a>
+                      <a href="#subContent"><span></span>Contents</a>
+                  </div>
+                  <!-- <iframe class="" src="Data/SPLIT-QCD-22/1.0.pdf" ></iframe> -->
                 </div>
+
+
+
+
+
+
+
+
 
         </div>
     </section>
