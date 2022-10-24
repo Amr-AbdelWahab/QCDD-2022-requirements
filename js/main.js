@@ -1,23 +1,10 @@
-// function load(target, url) {
-//     var r = new XMLHttpRequest();
-//     r.open("GET", url, true);
-//     r.onreadystatechange = function () {
-//         if (r.readyState != 4 || r.status != 200) return;
-//         target.innerHTML = r.responseText;
-//     };
-//     r.send();
-// }
-
-// let includes = Array.from(document.querySelectorAll('[data-include]'));
-// includes.map(include => {
-//     let file = include.dataset['include'] + '.html';
-//     load(include, file);
-// });
 
 
 
 
-
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
 
 let goUp = document.getElementById("goUp");
 
@@ -61,19 +48,51 @@ function toggleNavLinks () {
 // ------------------ out --------------------------------------
 // -----------------------------------------------------------------------------------------
 
-let items = document.querySelectorAll('[data-ID');
+let items = document.querySelectorAll('[data-ID]');
+let selectedData;
+let selectedIndex;
 
-
-// for (let i = 0; i < items.length; i++) {
-//     console.log( items[i]);
-// }
-items.forEach(e) {
-  <e className="target"></e>.addEventListener('click', function () {
-    console.log(e);
+for ( i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', selectMe)
 }
-let putOutHere = document.getElementById('putOutHere');
-let iframe = document.createElement('iframe');
 
-iframe.src = "Data/SPLIT-QCD-22/1.0.pdf";
-putOutHere.appendChild(iframe);
+function selectMe(e) {
+  
+    selectedData = e.target.dataset.id;
+    // console.log(selectedData);
+    console.log(e.target.innerHTML);
+    console.log(e.target.dataset.id);
+
+      // for ( j = 0; j < jData.length; j++) {
+      //   if ( selectedData == jData[i].dataID) {
+      //     console.log(jData[j].title)
+      //   }
+      // }
+  }
+
+// function jDataLoop () {
+//   for ( j = 0; j < jData.length; j++) {
+//     if ( selectedData == jData[i].dataID) {
+//       console.log(jData[j].title)
+//     }
+//   }
+// }
+
+
+
+
+// console.log(item1);
+//   function gorun ()  {
+
+//     let putOutHere = document.getElementById('putOutHere');
+//     let iframe = document.createElement('iframe');
+//     iframe.src = "Data/SPLIT-QCD-22/"+"1.0"+".pdf";
+//     putOutHere.appendChild(iframe);
+//   }
+
+
+
+
+  
+
 

@@ -209,7 +209,7 @@ let jData = [
 // <iframe src="Data/SPLIT-QCD-22/1.0.pdf"></iframe>
 
 // get Elements
-let putOutHere = document.querySelector("#putOutHere");
+// let putOutHere = document.querySelector("#putOutHere");
 // console.log(putOutHere);
 
 // let contents = Array.from(document.querySelectorAll('[data-ID]'));
@@ -222,10 +222,6 @@ let putOutHere = document.querySelector("#putOutHere");
 // create makeOut() function
 
 
-function makeOut () {
-
-console.log('');
-};
 
 
 // console.log(JSON.parse(jData));
