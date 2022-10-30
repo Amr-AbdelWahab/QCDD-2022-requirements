@@ -1,5 +1,6 @@
 let jData = [
     {
+        "mainTitle": "QCDD 2022 REQUIREMENTS",
         "dataID": 1,
         "fileName": "1.0.pdf",
         "title": "Masjid and Mosque Buildings",

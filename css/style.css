@@ -10,6 +10,7 @@ html{
 :root{
     --header-offset: 70px;
     --main-trans: all 0.5s ease;
+    --main-bg-color: #202124;
     --main-txt-color: #c78e2c;
     --sec-txt-color:rgb(175, 173, 173);
 }
@@ -34,10 +35,7 @@ a{
 
 .bd{
     border: 1px solid rgb(238, 255, 0);
-    col
-}
-.dis-none{
-    display: none !important;
+    
 }
 
 
@@ -531,7 +529,12 @@ nav .ham{
 /*---------- */
 
 #output{
-    min-height: 100vh;
+  min-height: 100vh;
+  /* background-color: #202124e1;
+  position:fixed ;
+  top: 0;
+  left: 0;
+  width: 100%; */
 }
 
 .output-cont{

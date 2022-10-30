@@ -49,50 +49,40 @@ function toggleNavLinks () {
 // -----------------------------------------------------------------------------------------
 
 let items = document.querySelectorAll('[data-ID]');
-let selectedData;
-let selectedIndex;
+let putOutHere = document.getElementById('putOutHere');
+let iframe = document.createElement('iframe');
 
 for ( i = 0; i < items.length; i++) {
   items[i].addEventListener('click', selectMe)
 }
 
 function selectMe(e) {
-  
-    selectedData = e.target.dataset.id;
-    // console.log(selectedData);
-    console.log(e.target.innerHTML);
-    console.log(e.target.dataset.id);
 
-      // for ( j = 0; j < jData.length; j++) {
-      //   if ( selectedData == jData[i].dataID) {
-      //     console.log(jData[j].title)
-      //   }
-      // }
+  for (j=0; j< jData.length; j++) {
+      if (jData[j].dataID == e.target.dataset.id) {
+
+        document.getElementById('output').classList.remove('disNon');
+        document.getElementById('mainH3Title').innerText = jData[0].mainTitle;
+        document.getElementById('mainH4Title').innerText = jData[j].title;
+
+        iframe.src = "Data/SPLIT-QCD-22/"+jData[j].fileName;
+        putOutHere.appendChild(iframe);
+      }
+    }
   }
 
-// function jDataLoop () {
-//   for ( j = 0; j < jData.length; j++) {
-//     if ( selectedData == jData[i].dataID) {
-//       console.log(jData[j].title)
-//     }
-//   }
-// }
+
+  document.getElementById('goToIndex').addEventListener('click', goToIndex);
+
+  function goToIndex(){
+    iframe.src = "";
+    document.getElementById('output').classList.add('disNon');
+    document.getElementById('mainH3Title').innerText = "";
+    document.getElementById('mainH4Title').innerText = "";
+  }
 
 
 
 
-// console.log(item1);
-//   function gorun ()  {
 
-//     let putOutHere = document.getElementById('putOutHere');
-//     let iframe = document.createElement('iframe');
-//     iframe.src = "Data/SPLIT-QCD-22/"+"1.0"+".pdf";
-//     putOutHere.appendChild(iframe);
-//   }
-
-
-
-
-  
-
-
+// ********

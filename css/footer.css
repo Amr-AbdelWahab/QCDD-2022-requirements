@@ -64,6 +64,7 @@ footer {
     /* width: 200px; */
     font-size: smaller;
     display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
