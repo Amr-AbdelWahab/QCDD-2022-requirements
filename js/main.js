@@ -75,10 +75,13 @@ function selectMe(e) {
   document.getElementById('goToIndex').addEventListener('click', goToIndex);
 
   function goToIndex(){
-    iframe.src = "";
-    document.getElementById('output').classList.add('disNon');
-    document.getElementById('mainH3Title').innerText = "";
-    document.getElementById('mainH4Title').innerText = "";
+    setTimeout(()=>{
+      iframe.src = "";
+      console.log(iframe.src);
+      document.getElementById('output').classList.add('disNon');
+      document.getElementById('mainH3Title').innerText = "";
+      document.getElementById('mainH4Title').innerText = "";
+      },1000)
   }
 
 
