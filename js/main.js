@@ -62,10 +62,13 @@ function selectMe(e) {
       if (jData[j].dataID == e.target.dataset.id) {
 
         document.getElementById('output').classList.remove('disNon');
-        document.getElementById('mainH3Title').innerText = jData[0].mainTitle;
+        document.getElementById('mainH3Title').innerText = jData[j].mainTitle;
         document.getElementById('mainH4Title').innerText = jData[j].title;
-
-        iframe.src = "Data/SPLIT-QCD-22/"+jData[j].fileName;
+        if (e.target.dataset.mainindex){
+          iframe.src = "Data/"+jData[j].fileName;
+        }else{
+          iframe.src = "Data/SPLIT-QCD-22/"+jData[j].fileName;
+        }
         putOutHere.appendChild(iframe);
       }
     }
