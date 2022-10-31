@@ -88,6 +88,10 @@ function selectMe(e) {
   }
 
 
+  function openBlank() {
+    document.getElementById('openBlank').href = iframe.src;
+  }
+
 
 
 
